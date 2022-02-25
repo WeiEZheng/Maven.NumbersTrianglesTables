@@ -49,6 +49,12 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String powernumber ="";
+        int storage;
+        for (int i=start;i<stop;i+=step){
+            storage = (int) Math.pow(i,exponent);
+            powernumber = powernumber + storage;
+        }
+        return powernumber;
     }
 }
