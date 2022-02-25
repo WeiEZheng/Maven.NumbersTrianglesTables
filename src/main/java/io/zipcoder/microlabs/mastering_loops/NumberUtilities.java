@@ -35,16 +35,28 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start) {
-        return null;
+        String numbers=""; //the parameter for getRange is stop based on readme
+        for (int i=0;i<start;i++){
+            numbers = numbers + i;
+        }
+        return numbers;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String numbers="";
+        for (int i=start;i<stop;i++){
+            numbers = numbers + i;
+        }
+        return numbers;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String numbers="";
+        for (int i=start;i<stop;i+=step){
+            numbers = numbers + i;
+        }
+        return numbers;
     }
 
 
